@@ -11,14 +11,14 @@ Marine plastic pollution is a massive global crisis, and a big chunk of it ends 
 **Weather-Resistant Build:** Sealed electronics compartment to protect internal microcontrollers from fine dust and moisture.
 
 ##Bill of Materials 
-**ESP32 NodeMCU Board** x1 Main microcontroller, Wi-Fi web server, and logic handler |
-**Dual Channel Motor Driver** x1 Controls speed and direction of drive motors |
-**12V High-Torque Gearmotors** x2 Skid-steer drivetrain propulsion |
-**Wide Rubber Wheels / Tracks** x4 Maximizes traction on loose sand |
-**Omni-Wheel / Caster** x1 Rear/front balance and stability |
-**JSN-SR04T Waterproof Ultrasonic** x2 Obstacle detection for autonomous navigation |
-**Vibration Motor / Servo** x1 Shakes the collection mesh sieve |
-**2S / 3S LiPo Battery** x1 High-current power source for motors and electronics |
-**DC-DC Buck Converter** x1 Steps down battery voltage to 5V for the ESP32 |
-**Stainless Steel Wire Mesh** x1 Sifting screen for plastic separation |
-**Waterproof Enclosure Box** x1 Protects electronics from sand and dust |
+**ESP32 NodeMCU Board** x1 Main microcontroller, Wi-Fi web server, and logic handler 
+**Dual Channel Motor Driver** x1 Controls speed and direction of drive motors 
+**12V High-Torque Gearmotors** x2 Skid-steer drivetrain propulsion 
+**Wide Rubber Wheels / Tracks** x4 Maximizes traction on loose sand 
+**Omni-Wheel / Caster** x1 Rear/front balance and stability 
+**JSN-SR04T Waterproof Ultrasonic** x2 Obstacle detection for autonomous navigation 
+**Vibration Motor / Servo** x1 Shakes the collection mesh sieve 
+**2S / 3S LiPo Battery** x1 High-current power source for motors and electronics 
+**DC-DC Buck Converter** x1 Steps down battery voltage to 5V for the ESP32 
+**Stainless Steel Wire Mesh** x1 Sifting screen for plastic separation 
+**Waterproof Enclosure Box** x1 Protects electronics from sand and dust 
