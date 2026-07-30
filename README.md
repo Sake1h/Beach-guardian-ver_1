@@ -1,3 +1,4 @@
+<img width="1183" height="480" alt="image" src="https://github.com/user-attachments/assets/db738ac9-93eb-4ec8-9902-16d3e9e3a2f4" />
 #Beach-Cleaning Rover (The Beest Challenge)
 An open-source, dual-mode autonomous and remote-controlled rover designed to patrol beaches, scoop up surface-level sand and debris, and separate plastics using an active vibrating sieve system.
 
