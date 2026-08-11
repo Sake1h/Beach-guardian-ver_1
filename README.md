@@ -1,4 +1,5 @@
-<img width="1183" height="480" alt="image" src="https://github.com/user-attachments/assets/db738ac9-93eb-4ec8-9902-16d3e9e3a2f4" />
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/66980464-ec4a-4b83-a08e-717633099e9d" />
+
 # Beach Guardian
 
 A remotely controlled beach-cleaning rover designed to collect plastic debris from sand while allowing sand to fall back through a mesh sieve.
@@ -112,3 +113,18 @@ Responsible for:
 - Left/right motor operation
 
 [View ESP32 #2 Code](ESP32_2_Motor_Control/)
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/f74d37f4-1f0a-40d6-8407-40493c7810dc" />
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/545bd368-1d3c-434a-a6e5-b7b2cfaac61d" />
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/86525e46-dbf0-4720-be3a-c6e96fb60ee4" />
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/4555bcc3-6a77-4a72-9a14-a105331356da" />
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/ed9c3fde-20b2-4d3f-8bc6-5870eaa93faa" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/bb396ea2-f9e3-4705-9639-f8a94651e6bc" />
+<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/6a00996d-a456-446e-8d10-bc355994d89b" />
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/02d3e6f4-138b-49c5-9db1-da6b5a7008e6" />
+
+
+
+
+
+
+
