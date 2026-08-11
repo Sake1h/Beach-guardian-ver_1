@@ -1,0 +1,185 @@
+IN1 (L298N): GPIO 32
+
+IN2 (L298N): GPIO 4
+
+IN3 (L298N): GPIO 27 (Updated)
+
+IN4 (L298N): GPIO 5
+
+ENA~ (L298N PWM): GPIO 18
+
+ENB~ (L298N PWM): GPIO 19
+
+Servo 1 PWM (Left Sieve Arm): GPIO 13
+
+Servo 2 PWM (Right Sieve Arm): GPIO 15
+
+# ESP32 Pinout & Hardware Configuration
+
+Beach Guardian V1 uses two ESP32 nodes:
+
+* **ESP32-A — Sensor Node:** Handles the three HC-SR04 ultrasonic sensors.
+* **ESP32-B — Actuator Node:** Controls the two motors and two sieve-arm servos.
+* The two ESP32 nodes communicate wirelessly.
+
+---
+
+## ESP32-A — Sensor Node
+
+### Ultrasonic Sensor Pin Mapping
+
+Three HC-SR04 ultrasonic sensors are used for obstacle detection.
+
+| Sensor         | Position |    TRIG |    ECHO | ECHO Protection    |
+| -------------- | -------- | ------: | ------: | ------------------ |
+| **HC-SR04 #1** | Front    | GPIO 12 | GPIO 14 | Voltage Divider #1 |
+| **HC-SR04 #2** | Left     | GPIO 27 | GPIO 26 | Voltage Divider #2 |
+| **HC-SR04 #3** | Right    | GPIO 25 | GPIO 33 | Voltage Divider #3 |
+
+### Voltage Divider
+
+The HC-SR04 ECHO signal can reach approximately **5 V**, while ESP32 GPIO inputs operate at **3.3 V logic**. Each ECHO signal is therefore passed through a resistor divider before reaching the ESP32.
+
+Each sensor uses:
+
+* **2 × 1.1 kΩ resistors**
+* **3 voltage-divider circuits**
+* **6 × 1.1 kΩ resistors total**
+
+### Voltage Divider Configuration
+
+```text
+HC-SR04 ECHO (5 V)
+        │
+        │
+     [1.1 kΩ]
+        │
+        ├──────────► ESP32 GPIO
+        │             (~2.5 V)
+     [1.1 kΩ]
+        │
+        │
+       GND
+```
+
+The divider produces approximately **2.5 V** from a 5 V ECHO signal:
+
+[
+V_{OUT}=5V\times\frac{1.1kΩ}{1.1kΩ+1.1kΩ}
+]
+
+[
+V_{OUT}\approx2.5V
+]
+
+### ESP32-A Master Pinout
+
+| Component              | Function    | ESP32-A GPIO | Signal   |
+| ---------------------- | ----------- | -----------: | -------- |
+| HC-SR04 #1             | Front TRIG  |  **GPIO 12** | Output   |
+| HC-SR04 #1             | Front ECHO  |  **GPIO 14** | Input    |
+| HC-SR04 #2             | Left TRIG   |  **GPIO 27** | Output   |
+| HC-SR04 #2             | Left ECHO   |  **GPIO 26** | Input    |
+| HC-SR04 #3             | Right TRIG  |  **GPIO 25** | Output   |
+| HC-SR04 #3             | Right ECHO  |  **GPIO 33** | Input    |
+| Wireless Communication | Sensor data |    **Wi-Fi** | Wireless |
+
+---
+
+# ESP32-B — Actuator Node
+
+ESP32-B controls the **L298N motor driver** and the two sieve-arm servos.
+
+### Motor Driver Pin Mapping
+
+| L298N Connection | Function          | ESP32-B GPIO | Signal         |
+| ---------------- | ----------------- | -----------: | -------------- |
+| **IN1**          | Motor A Direction |  **GPIO 32** | Digital Output |
+| **IN2**          | Motor A Direction |   **GPIO 4** | Digital Output |
+| **IN3**          | Motor B Direction |  **GPIO 27** | Digital Output |
+| **IN4**          | Motor B Direction |   **GPIO 5** | Digital Output |
+| **ENA**          | Motor A Speed     |  **GPIO 18** | PWM            |
+| **ENB**          | Motor B Speed     |  **GPIO 19** | PWM            |
+
+### Sieve Servo Pin Mapping
+
+| Servo       | Function        | ESP32-B GPIO | Signal |
+| ----------- | --------------- | -----------: | ------ |
+| **Servo 1** | Left Sieve Arm  |  **GPIO 13** | PWM    |
+| **Servo 2** | Right Sieve Arm |  **GPIO 15** | PWM    |
+
+The servo power supply is provided through **Buck Converter #2**, while the ESP32 provides the control signals.
+
+---
+
+## ESP32-B Master Pinout
+
+| Component              | Function / Channel      | ESP32-B GPIO | Signal Type    |
+| ---------------------- | ----------------------- | -----------: | -------------- |
+| L298N                  | IN1 — Motor A Direction |  **GPIO 32** | Digital Output |
+| L298N                  | IN2 — Motor A Direction |   **GPIO 4** | Digital Output |
+| L298N                  | IN3 — Motor B Direction |  **GPIO 27** | Digital Output |
+| L298N                  | IN4 — Motor B Direction |   **GPIO 5** | Digital Output |
+| L298N                  | ENA — Motor A Speed     |  **GPIO 18** | PWM            |
+| L298N                  | ENB — Motor B Speed     |  **GPIO 19** | PWM            |
+| Servo 1                | Left Sieve Arm          |  **GPIO 13** | PWM            |
+| Servo 2                | Right Sieve Arm         |  **GPIO 15** | PWM            |
+| Wireless Communication | Actuator data           |    **Wi-Fi** | Wireless       |
+
+---
+
+# Wireless Communication
+
+The two ESP32 nodes communicate wirelessly:
+
+```text
+┌──────────────────────┐
+│      ESP32-A         │
+│     Sensor Node      │
+│                      │
+│  HC-SR04 × 3         │
+│  Distance Detection  │
+└──────────┬───────────┘
+           │
+           │ Wireless
+           │ Communication
+           ▼
+┌──────────────────────┐
+│      ESP32-B         │
+│    Actuator Node     │
+│                      │
+│  L298N Motor Driver  │
+│  Motor A + Motor B   │
+│  Servo 1 + Servo 2   │
+└──────────────────────┘
+```
+
+> **Note:** The wireless implementation should be documented consistently with the actual firmware. If the current version uses standard Wi-Fi rather than ESP-NOW, describe it as **Wi-Fi communication** in the final README.
+
+---
+
+## Pin Allocation Summary
+
+### ESP32-A
+
+```text
+GPIO 12 → Front HC-SR04 TRIG
+GPIO 14 → Front HC-SR04 ECHO
+GPIO 27 → Left HC-SR04 TRIG
+GPIO 26 → Left HC-SR04 ECHO
+GPIO 25 → Right HC-SR04 TRIG
+GPIO 33 → Right HC-SR04 ECHO
+```
+
+### ESP32-B
+
+```text
+GPIO 32 → L298N IN1
+GPIO 4  → L298N IN2
+GPIO 27 → L298N IN3
+GPIO 5  → L298N IN4
+GPIO 18 → L298N ENA (PWM)
+GPIO 19 → L298N ENB (PWM)
+GPIO 13 → Left Sieve Servo (PWM)
+GPIO 15 → Right Sieve Servo (PWM)
+```
