@@ -1,0 +1,2 @@
+**Soldered voltage divider** to convert 5v from ECHO pin on ultrasonic sensor to 3.3v. 
+**Routed TRIGGER and ECHO** to respective GPIO pins on ESP32.
