@@ -122,6 +122,7 @@ Responsible for:
 <img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/6a00996d-a456-446e-8d10-bc355994d89b" />
 <img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/02d3e6f4-138b-49c5-9db1-da6b5a7008e6" />
 
+<img width="3124" height="3120" alt="full_signal_wiring_final" src="https://github.com/user-attachments/assets/26088796-5acf-4ca1-9a26-bee78db9a572" />
 
 
 
