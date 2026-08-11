@@ -12,6 +12,39 @@ The robot uses a front-mounted scoop with a mesh underside. The scoop can be low
 
 The robot is controlled through a local Wi-Fi web dashboard and uses two ESP32 microcontrollers.
 
+## Estimated Project Cost
+
+The following is an approximate estimate of the hardware cost for **Beach Guardian V1**. Prices may vary depending on the supplier, brand, and purchase quantity.
+
+| Component                       | Quantity | Estimated Unit Cost | Estimated Total |
+| ------------------------------- | -------: | ------------------: | --------------: |
+| ESP32 Development Board         |        2 |              $13.00 |          $26.00 |
+| HC-SR04 Ultrasonic Sensor       |        3 |               $2.00 |           $6.00 |
+| L298N Motor Driver              |        1 |               $3.00 |           $3.00 |
+| DC Geared Motor                 |        2 |              $10.00 |          $20.00 |
+| Robot Chassis                   |        1 |              $15.00 |          $15.00 |
+| Wheels                          |        2 |               $4.00 |           $8.00 |
+| Servo Motor                     |        2 |               $4.00 |           $8.00 |
+| Buck Converter                  |        2 |               $3.00 |           $6.00 |
+| Battery                         |        1 |              $25.00 |          $25.00 |
+| 1000 µF Capacitors              |        3 |               $1.00 |           $3.00 |
+| 1.1 kΩ Resistors                |        6 |               $0.10 |           $0.60 |
+| Fuse + Holder                   |        1 |               $3.00 |           $3.00 |
+| Power Switch                    |        1 |               $2.00 |           $2.00 |
+| Hook-up / Jumper Wire           | Assorted |               $5.00 |           $5.00 |
+| Perfboard                       |        1 |               $3.00 |           $3.00 |
+| Solder & Miscellaneous Hardware | Assorted |               $8.00 |           $8.00 |
+| **Estimated Total**             |          |                     |   **~$140 USD** |
+
+ Cost Notes
+
+* The two ESP32 boards were purchased for **5 OMR each**, approximately **$13 USD each**.
+* The estimate represents the approximate replacement cost of the hardware used in the project.
+* A large reason for the increased prices are due to current geopolitical situations which make shipping charges expensive.
+* **Raspberry Pi, webcam, and USB hub are not included**, as the planned plastic/colour recognition system was removed from Beach Guardian V1.
+* Development equipment such as a personal computer is not included in the project cost.
+
+
 ## What the Final Prototype Does
 
 - Remote driving through a web dashboard
