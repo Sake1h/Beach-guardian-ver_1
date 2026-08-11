@@ -1,0 +1,21 @@
+
+ESP32	2	Sensor processing + motor control
+L298N Motor Driver	1	Controls both DC motors
+DC Gear Motors	2	Propulsion
+Battery	1	Main power source
+Buck Converter	2	Voltage regulation for electronics
+Ultrasonic Sensors	3	Obstacle/distance detection
+1000 µF, 25 V Capacitor	[confirm quantity]	Power filtering
+1000 µF, 16 V Capacitor	[confirm quantity]	Power filtering
+1000 µF, 10 V Capacitor	[confirm quantity]	Power filtering
+Fuse	1	Battery protection
+Power Switch	1	Main power control
+Jumper / Hook-up Wire	Assorted	Electrical connections
+Solder	Assorted	Permanent connections
+Robot Chassis	1	Aluminum-weld cage structure 
+Wheels	4	Mobility
+Mechanical Hardware	Assorted	Mounting components
+Upper chassis (simple box design) 3d printed
+Servo motors (sieve function)
+Wheel Axel
+DIY parts---Sieve scoop, wheel shaft, sieve net (repurposed from old window frame)
