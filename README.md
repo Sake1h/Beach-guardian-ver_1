@@ -56,35 +56,9 @@ The following is an approximate estimate of the hardware cost for **Beach Guardi
 - ESP-NOW communication between the two ESP32s
 - 12 V battery-powered drivetrain
 - 5 V regulated electronics and servo power
-                    12 V Battery
-                         |
-                    Main Switch
-                         |
-              +----------+----------+
-              |                     |
-           L298N                 LM2596
-              |                     |
-         DC Motors                 5 V
-                                    |
-                         +----------+----------+
-                         |                     |
-                       ESP32 #1             Servos
-                         |
-             +-----------+-----------+
-             |                       |
-       Ultrasonic Sensors        Wi-Fi
-             |                       |
-             +--> Dashboard <--------+
-                         |
-                      ESP-NOW
-                         |
-                      ESP32 #2
-                         |
-                  +------+------+
-                  |             |
-                L298N        Servos
-                  |
-              DC Motors
+                   
+                   <img width="2171" height="724" alt="image" src="https://github.com/user-attachments/assets/b4f7accf-e5a4-4359-90a0-67a0095e23c1" />
+
   
  ESP32 #1
 - Hosts the Wi-Fi dashboard
