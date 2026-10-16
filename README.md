@@ -1,4 +1,5 @@
-<img width="2171" height="724" alt="ChatGPT Image Aug 12, 2026, 03_50_27 PM" src="https://github.com/user-attachments/assets/73717c22-4403-42d7-8b24-13d78babc88f" /><img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/66980464-ec4a-4b83-a08e-717633099e9d" />
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/e9c41c8a-5009-4555-a636-34b14abb654d" />
+
 
 # Beach Guardian
 
@@ -57,7 +58,8 @@ The following is an approximate estimate of the hardware cost for **Beach Guardi
 - 12 V battery-powered drivetrain
 - 5 V regulated electronics and servo power
                    
-  <img width="2171" height="724" alt="ChatGPT Image Aug 12, 2026, 03_50_27 PM" src="https://github.com/user-attachments/assets/63f49c8e-b0da-4aa6-a24e-a1890db76735" />
+ <img width="1148" height="1530" alt="image" src="https://github.com/user-attachments/assets/7bb0d168-a106-4700-99c8-1cb1bcc6e5a1" />
+
 
  ESP32 #1
 - Hosts the Wi-Fi dashboard
