@@ -103,6 +103,10 @@ Responsible for:
 - L298N control
 - Left/right motor operation
 
+<img width="1028" height="1599" alt="image" src="https://github.com/user-attachments/assets/e800d72d-bd74-46ed-a7da-9e1b4b774fc2" />
+
+
+
 [View ESP32 #2 Code](ESP32_2_Motor_Control/)
 <img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/f74d37f4-1f0a-40d6-8407-40493c7810dc" />
 <img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/545bd368-1d3c-434a-a6e5-b7b2cfaac61d" />
@@ -113,7 +117,6 @@ Responsible for:
 <img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/6a00996d-a456-446e-8d10-bc355994d89b" />
 <img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/02d3e6f4-138b-49c5-9db1-da6b5a7008e6" />
 
-<img width="3124" height="3120" alt="full_signal_wiring_final" src="https://github.com/user-attachments/assets/26088796-5acf-4ca1-9a26-bee78db9a572" />
 
 
 
