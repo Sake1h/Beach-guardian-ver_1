@@ -1,5 +1,3 @@
-<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/e9c41c8a-5009-4555-a636-34b14abb654d" />
-
 
 # Beach Guardian
 
@@ -56,10 +54,7 @@ The following is an approximate estimate of the hardware cost for **Beach Guardi
 - Two-servo scoop/sieve mechanism
 - ESP-NOW communication between the two ESP32s
 - 12 V battery-powered drivetrain
-- 5 V regulated electronics and servo power
-                   
- <img width="1148" height="1530" alt="image" src="https://github.com/user-attachments/assets/7bb0d168-a106-4700-99c8-1cb1bcc6e5a1" />
-
+- 5 V regulated electronics and servo power    
 
  ESP32 #1
 - Hosts the Wi-Fi dashboard
@@ -69,24 +64,6 @@ The following is an approximate estimate of the hardware cost for **Beach Guardi
 - Sends commands to ESP32 #2 using ESP-NOW
 
 
-## Firmware
-
-The ESP32 #1 firmware is contained in this repository.
-
-Main source:
-src/main.cpp
-
-Supporting modules:
-src/dashboard.cpp
-src/dashboard.h
-src/motors.cpp
-src/motors.h
-
-
-diagram for initial power supply
-
-  ## Software
-
 ### ESP32 #1 — Sensor & Dashboard
 Responsible for:
 - Ultrasonic sensors
@@ -94,29 +71,13 @@ Responsible for:
 - Web dashboard
 - Sending motor commands
 
-[View ESP32 #1 Code](ESP32_1_Sensors/)
 
 ### ESP32 #2 — Motor Control
 Responsible for:
 - Receiving commands
 - PWM motor control
 - L298N control
-- Left/right motor operation
-
-<img width="1028" height="1599" alt="image" src="https://github.com/user-attachments/assets/e800d72d-bd74-46ed-a7da-9e1b4b774fc2" />
-
-
-
-[View ESP32 #2 Code](ESP32_2_Motor_Control/)
-<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/f74d37f4-1f0a-40d6-8407-40493c7810dc" />
-<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/545bd368-1d3c-434a-a6e5-b7b2cfaac61d" />
-<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/86525e46-dbf0-4720-be3a-c6e96fb60ee4" />
-<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/4555bcc3-6a77-4a72-9a14-a105331356da" />
-<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/ed9c3fde-20b2-4d3f-8bc6-5870eaa93faa" />
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/bb396ea2-f9e3-4705-9639-f8a94651e6bc" />
-<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/6a00996d-a456-446e-8d10-bc355994d89b" />
-<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/02d3e6f4-138b-49c5-9db1-da6b5a7008e6" />
-
+- Left/right motor operations
 
 
 
