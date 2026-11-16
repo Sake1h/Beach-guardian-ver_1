@@ -1,3 +1,4 @@
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/31995006-d7a5-4973-bfb2-3955853cf3af" />
 
 # Beach Guardian
 
